@@ -789,12 +789,13 @@ section { padding: 6rem 2rem; }
 
 .galeria-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   margin-top: 3rem;
 }
 
-@media (max-width: 680px) { .galeria-grid { grid-template-columns: 1fr; gap: 1rem; } }
+@media (max-width: 900px) { .galeria-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 500px) { .galeria-grid { grid-template-columns: 1fr; gap: 1rem; } }
 
 .galeria-item {
   position: relative;
@@ -1213,6 +1214,7 @@ footer {
     <li><a href="#bertha">Bertha Lutz</a></li>
     <li><a href="#maria">Maria da Penha</a></li>
     <li><a href="#carolina">Carolina M. de Jesus</a></li>
+    <li><a href="#marielle">Marielle Franco</a></li>
     <li><a href="#timeline">Linha do Tempo</a></li>
     <li><a href="#galeria">Galeria</a></li>
     <li><a href="#videos">Vídeos</a></li>
@@ -1258,7 +1260,7 @@ footer {
         <div class="stat-label">Lei Maria da Penha</div>
       </div>
       <div class="stat-item">
-        <div class="stat-num">3</div>
+        <div class="stat-num">4</div>
         <div class="stat-label">Heroínas estudadas</div>
       </div>
       <div class="stat-item">
@@ -1452,6 +1454,65 @@ footer {
   </div>
 </section>
 
+
+<!-- ========== MARIELLE FRANCO ========== -->
+<section id="marielle" class="perfil-section">
+  <div class="container">
+    <span class="section-eyebrow reveal">Perfil · Vereadora e Ativista</span>
+    <div class="perfil-layout reverse">
+      <div class="photo-wrapper reveal">
+        <div class="photo-frame">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/twentyfive/Marielle_Franco.jpg/400px-Marielle_Franco.jpg"
+               alt="Marielle Franco"
+               data-fallback="https://upload.wikimedia.org/wikipedia/commons/2/twentyfive/Marielle_Franco.jpg"
+               class="perfil-foto"
+               style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform 0.6s ease;filter:grayscale(15%)"
+               onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Marielle_Franco_em_2017.jpg/400px-Marielle_Franco_em_2017.jpg'">
+          <div class="photo-overlay"></div>
+          <div class="photo-caption">
+            <h4>Marielle Franco</h4>
+            <span>1979 – 2018</span>
+          </div>
+        </div>
+        <div class="photo-frame-deco"></div>
+        <div class="photo-frame-deco br"></div>
+      </div>
+
+      <div class="perfil-content reveal">
+        <h2>Marielle Franco</h2>
+        <div class="vida-anos">1979 – 2018 · Vereadora · Socióloga · Ativista dos Direitos Humanos</div>
+
+        <p>Marielle Francisco Franco nasceu em 27 de julho de 1979, na favela da Maré, no Rio de Janeiro. Criada em um dos territórios mais vulneráveis do Brasil, foi aprovada no vestibular da PUC-Rio por meio de bolsa do ProUni e tornou-se socióloga. Mais tarde, concluiu um mestrado em Administração Pública na UFF.</p>
+
+        <p>Em 2016, foi eleita vereadora do Rio de Janeiro pelo PSOL com <strong>46.502 votos</strong>, sendo a quinta candidata mais votada da cidade. Mulher negra, favelada, mãe e lésbica assumida, Marielle representava quem raramente ocupa espaços de poder — e fazia questão de dizer isso em cada discurso.</p>
+
+        <p>Na Câmara Municipal, presidiu a <strong>Comissão da Mulher</strong> e foi relatora de uma comissão de acompanhamento da intervenção militar no Rio. Lutava diariamente contra o genocídio da população negra, a violência policial nas favelas e a desigualdade de gênero. Em 14 de março de 2018, foi assassinada com quatro tiros na cabeça ao sair de um evento sobre o empoderamento de mulheres negras. Seu motorista Anderson Gomes também foi morto.</p>
+
+        <p>O crime chocou o Brasil e o mundo. O grito <em>"Marielle, presente!"</em> ecoou em mais de 60 países. Seu assassinato se tornou símbolo da violência contra mulheres negras e lideranças políticas progressistas — e a investigação revelou o envolvimento de milicianos com ligações políticas de alto escalão.</p>
+
+        <ul class="conquistas">
+          <li>Vereadora mais votada da bancada do PSOL no Rio de Janeiro (2016)</li>
+          <li>Presidiu a Comissão da Mulher na Câmara Municipal do Rio</li>
+          <li>Referência nacional no combate ao racismo e à violência de gênero</li>
+          <li>Seu nome tornou-se símbolo mundial de resistência e luta por direitos humanos</li>
+          <li>Homenageada com placas, murais e monumentos em dezenas de países</li>
+        </ul>
+
+        <div class="destaque-card">
+          <p>"Eu sou porque nós somos. Fui negra, mulher, favelada e lésbica — e fiz disso força, não fraqueza. Marielle virou semente."</p>
+        </div>
+
+        <div class="tags">
+          <span class="tag tag-rosa">Racismo</span>
+          <span class="tag tag-roxo">Política</span>
+          <span class="tag tag-dourado">Direitos Humanos</span>
+          <span class="tag tag-rosa">Feminismo Negro</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ========== LINHA DO TEMPO ========== -->
 <section id="timeline">
   <div class="container">
@@ -1519,6 +1580,15 @@ footer {
           </div>
         </li>
         <li class="tl-item reveal">
+          <div class="tl-spacer"></div>
+          <div class="tl-dot"><div class="tl-dot-inner">🌹</div></div>
+          <div class="tl-content">
+            <div class="tl-ano">2018</div>
+            <div class="tl-titulo">Assassinato de Marielle Franco</div>
+            <div class="tl-desc">A vereadora e ativista Marielle Franco é assassinada no Rio de Janeiro. Seu nome torna-se símbolo mundial de luta contra o racismo, a violência política e a opressão de mulheres negras.</div>
+          </div>
+        </li>
+                <li class="tl-item reveal">
           <div class="tl-content">
             <div class="tl-ano">Hoje</div>
             <div class="tl-titulo">A Luta Continua</div>
@@ -1575,6 +1645,17 @@ footer {
         <div class="galeria-overlay">
           <div class="galeria-nome">Carolina M. de Jesus</div>
           <div class="galeria-legenda">Escritora · Visionária · 1914–1977</div>
+        </div>
+      </div>
+      <!-- Marielle Franco -->
+      <div class="galeria-item reveal" style="transition-delay:0.45s">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Marielle_Franco_em_2017.jpg/600px-Marielle_Franco_em_2017.jpg"
+             alt="Marielle Franco"
+             onerror="this.style.display='none'; this.parentElement.querySelector('.galeria-placeholder').style.display='flex'">
+        <div class="galeria-placeholder" style="display:none; background:linear-gradient(135deg,#C2185B,#D4A017); position:absolute; inset:0; align-items:center; justify-content:center; font-size:5rem;">🌹</div>
+        <div class="galeria-overlay">
+          <div class="galeria-nome">Marielle Franco</div>
+          <div class="galeria-legenda">Vereadora · Ativista · 1979–2018</div>
         </div>
       </div>
     </div>
@@ -1665,6 +1746,8 @@ footer {
         <p><strong>Bertha Lutz</strong> nos ensinou que a participação política é um direito, não um privilégio. Graças a ela, cada mulher que vota hoje exerce um poder que antes lhe era negado. <strong>Maria da Penha</strong> transformou sua dor pessoal em proteção coletiva, provando que a justiça pode e deve ser alcançada mesmo quando o caminho demora décadas.</p>
 
         <p><strong>Carolina Maria de Jesus</strong> nos mostrou que vozes marginalizadas têm histórias que o mundo precisa ouvir — e que a escrita pode ser o instrumento mais poderoso de quem não tem nada além da verdade.</p>
+
+        <p><strong>Marielle Franco</strong> nos lembrou que ocupar espaços de poder sendo negra, favelada e mulher é em si um ato revolucionário. Seu assassinato não silenciou sua voz — ao contrário, a ecoou pelo mundo inteiro. "Marielle, presente!" é o grito de quem recusa o esquecimento e exige que a luta continue.</p>
 
         <p>A luta por igualdade, respeito e justiça social não pertence ao passado. Ela vive em cada denúncia feita por uma vítima de violência, em cada menina que estuda acreditando que pode chegar onde quiser, em cada mulher que ocupa espaços que lhe foram negados por séculos. O feminismo brasileiro é feito de história, mas aponta sempre para o futuro.</p>
       </div>
